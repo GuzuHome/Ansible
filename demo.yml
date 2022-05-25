@@ -1,0 +1,9 @@
+- hosts: clients
+  remote_user: ansible
+  become: yes
+  tasks:
+  - name: Install packages
+    apt:
+      name:
+      - htop
+      state: latest
