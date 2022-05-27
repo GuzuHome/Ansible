@@ -1,4 +1,7 @@
-- hosts: 192.168.1.93
+- hosts: 
+192.168.1.93
+192.168.1.92
+192.168.1.91
   become: yes
   tasks:
   - name: Install packages
